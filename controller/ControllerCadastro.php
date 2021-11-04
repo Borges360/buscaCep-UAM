@@ -1,5 +1,5 @@
 <?php
-require_once("../model/cadastroLivro.php");
+require_once("../model/Endereco.php");
 class cadastroController{
 
     private $cadastro;
