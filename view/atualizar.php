@@ -22,7 +22,7 @@
     <fieldset>
         <div class="form-group">
             <form method="POST" action="../controller/editarController.php">
-                <h1 style="color: #fff; padding-bottom: 5%;">Cadastro de CEP</h1>
+                <h1 style="color: #fff; padding-bottom: 5%;">Atualizar de CEP</h1>
                 <input class="form-control" type="text" id="cep" name="cep" placeholder="CEP" required><br />
                 <input class="form-control" type="text" id="logradouro" name="logradouro" placeholder="Logradouro"><br />
                 <input class="form-control" type="text" id="tipoLogradouro" name="tipoLogradouro" placeholder="Tipo Logradouro"><br />
