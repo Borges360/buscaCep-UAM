@@ -1,7 +1,6 @@
 <?php
-require_once("banco.php");
 
-class Endereco extends Banco {
+class EnderecoModel {
 
     private $cep;
     private $logradouro;
@@ -34,8 +33,14 @@ class Endereco extends Banco {
     public function setIdCidade($string){
         $this->idCidade = $string;
     }
-    public function setidBairro($string){
+    public function setIdBairro($string){
         $this->idBairro = $string;
+    }
+    public function setUf($string){
+        $this->uf = $string;
+    }
+    public function setCidade($string){
+        $this->cidade = $string;
     }
     //Metodos Get
     public function getCep(){
@@ -59,10 +64,15 @@ class Endereco extends Banco {
     public function getIdBairro(){
         return $this->idBairro;
     }
-
-
-    public function incluir(){
-        return $this->setEndereco($this->getCep(),$this->getLogradouro(),$this->getTipoLogradouro(),$this->getComplemento(),$this->getLocal(),$this->getIdCidade(), $this->getIdBairro());
+    public function getUf(){
+        return $this->uf;
     }
+    public function getCidade(){
+        return $this->cidade;
+    }
+
+
+
+    
 }
 ?>
